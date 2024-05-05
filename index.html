@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <header>
+        <img class="logo" src="assests/owp.webp" alt="logo">
+        <img class="masseyhacks" src="assests/massey.png">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">How it Works</a></li>
+                <li><a href="https://drive.google.com/drive/folders/1cwwqQMtzRd5IbObcoVk_AbyXA8cR63dz" target="_blank"> Tutorial</a></li>
+                <li><a href="goals.html">Goals</a></li>
+                <li><a href="AboutUs.html">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <div class="main">
+        <p class="text">
+            Ocean Plastic Object <br>Detection Mode YOLO V8
+        </p>
+        <button class="AI" onclick="redirectToModel()">AI Model</button>
+
+        <script>
+        function redirectToModel() {
+          window.location.href = "https://detect.roboflow.com/?model=plastic-detection-zzsko&version=1&api_key=F1P8M60GsNcT5Ia3lHV4";
+        }
+        </script>       
+         </p>
+        
+    </div>
+
+    <div class="steps">
+        <div class="back">
+            <p class="head1"> How It Works</p>
+        </div>
+      
+        <div class="step1">
+            
+            <div class="icon1">
+            </div>
+            <p class="title1">Step 1</p> <br>
+            <p class="text1">The AI takes an image - in this case, the image features a turtle swimming by himself in clear ocean with plastic pieces around him </p>
+            <img src="assests/waste before.jpeg" class="image1">
+        </div>
+
+        <div class="step2">
+            <div class="icon2">
+            </div>
+            <p class="title2">Step 2</p> 
+            <p class="text2">The image is now processing through AI to identify pieces of plastic. The AI is trained with thousands of pictures to learn what a plastic look like.</p>
+            <img src="assests/training.webp" class="image2">
+        </div>
+       
+        <div class="step3">
+            <div class="icon3">
+            </div>
+            <p class="title3">Step 3</p> 
+            <p class="text3">The picture is now returned with bounding boxes around identified pieces of plastic. Each box is labelled with a number from 0 to 1, showing the confidence level of the AI's Identification</p>
+            <img src="assests/waste detection.png" class="image3">
+        </div>
+
+        <div class="step4">
+            <div class="icon4">
+            </div>
+            <p class="title4">Step 4</p> 
+            <p class="text4">The software also works on moving video. In the future, this could be used in an Autonomous Underwater Vehicle (AUV). The AUV could be able to detect and collect the plastic, helping clean up trash in the ocean.</p>
+            <video src="assests/A Diver Filmed Shocking Footage Of Plastic Waste Off The Coast Of Bali.mp4" class="image4" controls loop>
+        </div>
+
+    </div>
+</body>
+</html>
